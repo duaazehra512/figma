@@ -12,7 +12,7 @@ const ChairGallery = () => {
   return (
     <div className="mt-12 flex items-center relative">
       {/* Rotated Text Section - Perfect Alignment */}
-      <div className="absolute top-1/2 -translate-y-1/2 -left-32 rotate-90 origin-center">
+      <div className="absolute top-1/2  -translate-y-1/2 -left-32 rotate-90 origin-center">
         <p className="text-sm md:text-lg text-gray-700 font-semibold tracking-wide whitespace-nowrap">
           EXPLORE NEW AND POPULAR STYLES
         </p>

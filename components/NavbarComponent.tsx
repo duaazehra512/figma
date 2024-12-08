@@ -14,10 +14,10 @@ function Navbar() {
         <div className="text-sm">✔ Free Shipping On All Orders Over $50</div>
         <div className="flex items-center space-x-6 text-sm">
           <div>Eng</div>
-          <div>FAQs</div>
+          <a href="/faqs" className="hover:text-teal-600">FAQs</a>
           <div className="flex items-center space-x-1">
             <IoIosHelpCircleOutline size={16} />
-            <span>Need Help</span>
+            <a href="/contact" className="hover:text-teal-600">Need Help</a>
           </div>
         </div>
       </div>
@@ -30,11 +30,12 @@ function Navbar() {
             <img src="/logo.png" alt="logo" />
             <span className="text-xl font-bold text-gray-700">Comforty</span>
           </div>
-
           {/* Cart */}
           <div className="relative hidden md:flex items-center">
-            <FaShoppingCart size={30} className="text-gray-700" />
-            <span className="absolute top-0 right-0   bg-teal-600 text-white text-xs rounded-full px-1">4</span>
+            <a href="/cart">
+              <FaShoppingCart size={30} className="text-gray-700" />
+              <span className="absolute top-0 right-0 bg-teal-600 text-white text-xs rounded-full px-1">4</span>
+            </a>
           </div>
 
           {/* Mobile Menu Icon */}
@@ -49,11 +50,11 @@ function Navbar() {
         <div className="container mx-auto flex justify-between items-center">
           {/* Links */}
           <div className="flex space-x-6 font-thin text-gray-700">
-            <a href="#" className="hover:text-teal-600">Home</a>
-            <a href="#" className="hover:text-teal-600">Shop</a>
-            <a href="#" className="hover:text-teal-600">Product</a>
+            <a href="/" className="hover:text-teal-600">Home</a>
+            <a href="/products" className="hover:text-teal-600">Shop</a>
+            <a href="/singleproduct" className="hover:text-teal-600">Product</a>
             <a href="#" className="hover:text-teal-600">Pages</a>
-            <a href="#" className="hover:text-teal-600">About</a>
+            <a href="/about" className="hover:text-teal-600">About</a>
           </div>
 
           {/* Contact */}
