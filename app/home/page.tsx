@@ -17,6 +17,10 @@ export default function Home() {
       <FeaturedProductComponent/>
       <TopCategories/>
     < ChairGallery/>
+      <div>
+        <h1 className='text-4xl w-full text-center font-semibold'>Our  Products</h1>
+      </div>
+    
     <LastHome/>
     </div>
   )
