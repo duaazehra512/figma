@@ -8,7 +8,7 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="">
+    <div className="border-b-2 border bg-gray-200">
       {/* Section 1: Top Bar */}
       <div className="md:px-56 hidden text-gray-200 md:flex justify-between items-center px-4 py-2 bg-[#272343]">
         <div className="text-sm">✔ Free Shipping On All Orders Over $50</div>
@@ -45,7 +45,7 @@ function Navbar() {
       </div>
 
       {/* Section 3: Menu and Contact */}
-      <div className="hidden md:px-56 md:flex bg-white px-4 py-3">
+      <div className="hidden md:px-56 md:flex bg-white px-4 py-5">
         <div className="container mx-auto flex justify-between items-center">
           {/* Links */}
           <div className="flex space-x-6 font-thin text-gray-700">
