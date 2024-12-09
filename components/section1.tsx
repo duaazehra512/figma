@@ -5,7 +5,7 @@ const FurnitureCollection = () => {
     <div className="w-full flex flex-col md:flex-row justify-between rounded-b-md mt-12 h-auto  bg-[#F0F2F3] p-6 md:p-8">
       {/* Left Section */}
       <div className="md:w-1/2 flex flex-col justify-center items-center md:items-start space-y-6 text-center md:text-left">
-        <p className="text-gray-600 font-thin text-sm md:text-base">
+        <p className="text-gray-900  text-sm md:text-base">
           WELCOME TO CHAIRY
         </p>
         <h1 className="text-2xl md:text-5xl font-bold leading-relaxed">

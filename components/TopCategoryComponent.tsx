@@ -36,9 +36,9 @@ const TopCategories = () => {
                 className="w-full h-auto object-cover"
               />
             </CardHeader>
-            <CardContent className="p-4">
-              <h3 className="text-md font-medium text-gray-800">{category.name}</h3>
-              <p className="text-sm text-gray-600">{category.products}</p>
+            <CardContent className="p-4 bg-black">
+              <h3 className="text-md font-medium  text-white">{category.name}</h3>
+              <p className="text-sm  text-white">{category.products}</p>
             </CardContent>
           </Card>
         ))}
