@@ -20,25 +20,41 @@ export default function LastHome() {
       
       <div className='flex mt-5'>
         {products.map((product, index) => (
-          <Card key={index} className='border-none shadow-none'>
-            <CardContent>
-              <img src={product.image} alt={product.name} />
-            </CardContent>
-            <CardFooter>
+    <Card key={index} className="border-none shadow-none">
+              <CardContent>
+                <div className="relative">
+                  <img 
+                    src={product.image} 
+                    alt={product.name} 
+                    className="w-full h-auto object-cover"
+                  />
+                  {product.text && (
+                    <span
+                      className={`absolute top-2 left-2 ${
+                        product.text === "New"
+                          ? "bg-green-600"
+                          : product.text === "Sales"
+                          ? "bg-orange-500"
+                          : ""
+                      } text-white text-xs font-bold px-2 py-0.5 rounded`}
+                    >
+                      {product.text}
+                    </span>
+                  )}
+                </div>
+              </CardContent>
+         <CardFooter>
             <div className="flex flex-col items-start">
-            <div className="text-xl text-white bg-green-600">{product.text}</div>
-              <div className="flex flex-col items-start">
-                <div className="text-xl text-teal-700">{product.name}</div>
-
-               
-
+           <div className="text-xl text-black hover:text-teal-700">{product.name}
+           <button className="btn btn-primary mt-2">
+                    <ShoppingCart className="mr-2 ml-11 bg-gray-300 rounded-[4px] hover:bg-teal-700" />
+                  </button>
+           </div>
                 <div className='flex flex-row justify-between w-full'>
                   <div className="text-xl font-bold mt-2">{product.price}</div>
-                  <button className="btn btn-primary mt-2">
-                    <ShoppingCart className="mr-2  bg-gray-500 rounded-[4px] hover:bg-teal-700" />
-                  </button>
+                 
                   </div>
-                </div>
+                
               </div>
             </CardFooter>
           </Card>
@@ -47,22 +63,42 @@ export default function LastHome() {
            <div className='flex'>
         {otherProducts.map((otherProduct, index) => (
           <Card key={index} className='border-none shadow-none'>
-            <CardContent>
-              <img src={otherProduct.image} alt={otherProduct.name} />
-            </CardContent>
+             <CardContent>
+                <div className="relative">
+                  <img 
+                    src={otherProduct.image} 
+                    alt={otherProduct.name} 
+                    className="w-full h-auto object-cover"
+                  />
+                  {otherProduct.text && (
+                    <span
+                      className={`absolute top-2 left-2 ${
+                        otherProduct.text === "New"
+                          ? "bg-green-600"
+                          : otherProduct.text === "Sales"
+                          ? "bg-orange-500"
+                          : ""
+                      } text-white text-xs font-bold px-2 py-0.5 rounded`}
+                    >
+                      {otherProduct.text}
+                    </span>
+                  )}
+                </div>
+              </CardContent>
             <CardFooter>
               <div className="flex flex-col items-start h-8">
   
-              <div className="text-xl text-white bg-green-600">{otherProduct.text}</div>
-              <div className="flex flex-col items-start">
-                <div className="text-xl  text-teal-700">{otherProduct.name}</div>
-                <div className='flex flex-row justify-between w-full'>
-                  <div className="text-xl font-bold mt-2">{otherProduct.price}</div>
-                  <button className="btn btn-primary mt-2">
-                    <ShoppingCart className="mr-2 bg-gray-500 rounded-[4px] hover:bg-teal-700" />
+             
+                <div className="text-xl text-black hover:text-teal-700 ">{otherProduct.name} 
+                <button className="btn btn-primary mt-2">
+                    <ShoppingCart className="mr-2 ml-11 bg-gray-300 rounded-[4px] hover:bg-teal-700" />
                   </button>
                 </div>
-              </div> </div>
+                <div className='flex flex-row justify-between w-full'>
+                  <div className="text-xl font-bold mt-2">{otherProduct.price}</div>
+                 
+                </div>
+              </div> 
             </CardFooter>
           </Card>
         ))}

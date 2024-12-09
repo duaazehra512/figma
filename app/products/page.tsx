@@ -18,31 +18,53 @@ export default function FeaturedProductComponent() {
     { image: "sec2.png.png", name: "Library Stool Chair", price: "$20" },
   ];
 
-  return ( <div>
+  return (<div>
+    <div>
+      <h1 className="text-pretty font-bold text-3xl ml-44">All Products</h1>
+    </div>
     <div className="mt-8 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-5">
         {products.map((product, index) => (
           <Card key={index} className="border-none shadow-md">
             <CardContent>
-              <img src={product.image} alt={product.name} className="w-full h-auto object-cover rounded-lg" />
+              <div className="relative">
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="w-full h-auto object-cover rounded-lg"
+                />
+                {/* Conditionally rendering "New" or "Sales" badge */}
+                {index % 4 === 0 && (
+                  <span className="absolute top-2 left-2 bg-green-600 text-white text-xs font-bold px-2 py-0.5 rounded">
+                    New
+                  </span>
+                )}
+                {index % 4 === 1 && (
+                  <span className="absolute top-2 left-2 bg-orange-500 text-white text-xs font-bold px-2 py-0.5 rounded">
+                    Sales
+                  </span>
+                )}
+              </div>
             </CardContent>
             <CardFooter>
               <div className="flex flex-col items-start">
-              <div className="flex flex-col items-start">
-              <div className="text-xl text-white bg-green-600">{product.text}</div>
-                <div className="text-lg text-teal-700  font-medium">{product.name}</div>
+                <div className="text-lg text-black hover:text-teal-700 font-medium">{product.name}
+                <button className=" mr-2 btn btn-primary flex text-black items-center p-2 rounded-md bg-gray-300 hover:bg-teal-700">
+                    <ShoppingCart className="mr-2 ml-11" />
+                  </button>
+                </div>
                 <div className="flex justify-between w-full items-center mt-2">
                   <div className="text-lg font-bold">{product.price}</div>
-                  <button className="btn btn-primary flex items-center p-2 rounded-md bg-gray-500 hover:bg-teal-700">
-                    <ShoppingCart className="mr-2" />
-                  </button>
-                </div> </div>
+                 
+                </div>
               </div>
             </CardFooter>
           </Card>
         ))}
       </div>
-</div>
+    
+  </div>
+  
        {/* Section 2 */}
        <div className="bg-stone-100 mt-12 flex flex-col items-center py-16">
            {/* Title */}

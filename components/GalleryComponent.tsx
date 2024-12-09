@@ -3,10 +3,10 @@ import Image from 'next/image';
 const ChairGallery = () => {
   const chairImages = [
     { src: "/chair3.png", alt: "Main Chair", main: true },
-    { src: "/chair2.png", alt: "Chair 2", main: false },
+    { src: "/chair4.png", alt: "Chair 2", main: false },
     { src: "/chair.png", alt: "Chair 3", main: false },
-    { src: "/chair4.png", alt: "Chair 4", main: false },
-    { src: "/card.png", alt: "Chair 5", main: false }
+    { src: "/card.png", alt: "Chair 4", main: false },
+    { src: "/chair2.png", alt: "Chair 5", main: false }
   ];
 
   return (

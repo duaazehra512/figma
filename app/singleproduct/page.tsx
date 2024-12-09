@@ -1,5 +1,5 @@
 import React from "react";
-import { FaShoppingCart } from "react-icons/fa";
+import { FiShoppingCart } from "react-icons/fi";
 
 export default function Home() {
   const demoImages = [
@@ -24,17 +24,18 @@ export default function Home() {
         </div>
         {/* Product Details */}
         <div className="flex flex-col justify-center space-y-6">
-          <h1 className="text-4xl font-bold text-[rgb(35,43,83)]">Library Stool Chair</h1>
-          <span className="p-4 bg-[#029FAE] rounded-full inline-block font-semibold text-white">$20.00 US</span>
+          <h1 className="text-4xl font-bold text-[rgb(35,43,83)]">Library Stool <br /> Chair</h1>
+          <span className="p-4 w-52 bg-teal-600 rounded-full inline-block text-3xl font-semibold text-white">$20.00 USD</span>
           <p className="text-[#6C757D] text-base leading-relaxed">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
             tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur
             adipiscing.
           </p>
-          <button className=" items-center gap-2 bg-teal-700 text-white font-bold py-1 px-3 rounded-lg hover:bg-teal-950 transition inline-block">
-            <FaShoppingCart size={18} />
-            Add To Cart
-          </button>
+          <button className="w-52 h-14 items-center gap-2 bg-teal-700 text-white font-bold py-1 px-3 rounded-lg hover:bg-teal-950 transition inline-flex">
+  < FiShoppingCart  size={25} />
+  <span>Add To Cart</span>
+</button>
+
         </div>
       </div>
 
@@ -63,10 +64,12 @@ export default function Home() {
                 alt={`Demo Image ${index + 1}`}
                 className="rounded-lg w-full h-36 object-cover mb-4"
               />
-              <h3 className="text-[#343A40] font-semibold text-sm mb-2">
-                Demo Product {index + 1}
-              </h3>
-              <p className="text-black font-bold">$99</p>
+              <div className="flex justify-between items-center text-sm mb-2">
+  <h3 className="text-[#343A40] font-semibold">Library Stool Chair</h3>
+  <p className="text-black font-bold">$99</p>
+</div>
+
+             
             </div>
           ))}
         </div>
