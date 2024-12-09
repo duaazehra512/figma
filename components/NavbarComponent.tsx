@@ -34,7 +34,7 @@ function Navbar() {
           <div className="relative hidden md:flex items-center">
             <a href="/cart">
               <FaShoppingCart size={30} className="text-gray-700" />
-              <span className="absolute top-0 right-0 bg-teal-600 text-white text-xs rounded-full px-1">4</span>
+              <span className="absolute top-0 right-0 bg-teal-600 text-white text-xs rounded-full px-1">2</span>
             </a>
           </div>
 
@@ -49,12 +49,14 @@ function Navbar() {
       <div className="hidden md:px-56 md:flex bg-white px-4 py-5">
         <div className="container mx-auto flex justify-between items-center">
           {/* Links */}
-          <div className="flex space-x-6 font-thin text-gray-700">
+          <div className="flex space-x-6  text-gray-900 ">
             <a href="/" className="hover:text-teal-600">Home</a>
             <a href="/products" className="hover:text-teal-600">Shop</a>
             <a href="/singleproduct" className="hover:text-teal-600">Product</a>
-            <a href="#" className="hover:text-teal-600">Pages</a>
+            <a href="/contact " className="hover:text-teal-600">Pages</a>
             <a href="/about" className="hover:text-teal-600">About</a>
+            
+            
           </div>
 
           {/* Contact */}

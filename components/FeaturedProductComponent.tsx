@@ -21,11 +21,11 @@ export default function FeaturedProductComponent() {
             </CardContent>
             <CardFooter>
               <div className="flex flex-col items-start">
-                <div className="text-xl text-green-500">{product.name}</div>
+                <div className="text-xl text-gray-800 hover:text-teal-600 hover:pointer-events-auto">{product.name}</div>
                 <div className='flex flex-row justify-between w-full'>
                   <div className="text-xl font-bold mt-2">{product.price}</div>
                   <button className="btn btn-primary mt-2">
-                    <ShoppingCart className="mr-2 rounded-[4px] hover:bg-[#029FAE]" />
+                    <ShoppingCart className="mr-2 bg-gray-300 rounded-[4px] hover:bg-teal-700" />
                   </button>
                 </div>
               </div>

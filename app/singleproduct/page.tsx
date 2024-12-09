@@ -3,11 +3,11 @@ import { FaShoppingCart } from "react-icons/fa";
 
 export default function Home() {
   const demoImages = [
-    "/chair.png",
-    "/chair2.png",
+    "/card.png",
     "/chair3.png",
     "/chair4.png",
-    "/card.png",
+    "/chair2.png",
+    "/chair.png",
   ];
 
   return (
@@ -31,7 +31,7 @@ export default function Home() {
             tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur
             adipiscing.
           </p>
-          <button className="flex items-center gap-2 bg-[#007BFF] text-white font-bold py-3 px-6 rounded-lg hover:bg-[#0056b3] transition inline-block">
+          <button className=" items-center gap-2 bg-teal-700 text-white font-bold py-1 px-3 rounded-lg hover:bg-teal-950 transition inline-block">
             <FaShoppingCart size={18} />
             Add To Cart
           </button>
@@ -66,7 +66,7 @@ export default function Home() {
               <h3 className="text-[#343A40] font-semibold text-sm mb-2">
                 Demo Product {index + 1}
               </h3>
-              <p className="text-[#6C757D] font-bold">$99</p>
+              <p className="text-black font-bold">$99</p>
             </div>
           ))}
         </div>

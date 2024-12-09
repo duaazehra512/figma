@@ -4,16 +4,16 @@ import { ShoppingCart } from 'lucide-react';
 
 export default function FeaturedProductComponent() {
   const products = [
-    { image: "chair.png", name: "Library Stool Chair", price: "$20" },
-    { image: "chair2.png", name: "Library Stool Chair", price: "$20" },
+    { image: "chair.png", name: "Library Stool Chair", price: "$20" ,text:"New" },
+    { image: "chair2.png", name: "Library Stool Chair", price: "$20", text:"Sales" },
     { image: "chair3.png", name: "Library Stool Chair", price: "$20" },
     { image: "chair4.png", name: "Library Stool Chair", price: "$20" },
-    { image: "sec1.png.png", name: "Library Stool Chair", price: "$20" },
-    { image: "card.png", name: "Library Stool Chair", price: "$20" },
-    { image: "image.png", name: "Library Stool Chair", price: "$20" },
+    { image: "sec1.png.png", name: "Library Stool Chair", price: "$20" ,text:"New"},
+    { image: "card.png", name: "Library Stool Chair", price: "$20",text:"Sales" },
+    { image: "image.png", name: "Library Stool Chair", price: "$20", },
     { image: "chair.png", name: "Library Stool Chair", price: "$20" },
-    { image: "sec.png.png", name: "Library Stool Chair", price: "$20" },
-    { image: "chair2.png", name: "Library Stool Chair", price: "$20" },
+    { image: "sec.png.png", name: "Library Stool Chair", price: "$20",text:"New" },
+    { image: "chair2.png", name: "Library Stool Chair", price: "$20" ,text:"Sales"},
     { image: "chair3.png", name: "Library Stool Chair", price: "$20" },
     { image: "sec2.png.png", name: "Library Stool Chair", price: "$20" },
   ];
@@ -28,13 +28,15 @@ export default function FeaturedProductComponent() {
             </CardContent>
             <CardFooter>
               <div className="flex flex-col items-start">
-                <div className="text-lg text-green-600 font-medium">{product.name}</div>
+              <div className="flex flex-col items-start">
+              <div className="text-xl text-white bg-green-600">{product.text}</div>
+                <div className="text-lg text-teal-700  font-medium">{product.name}</div>
                 <div className="flex justify-between w-full items-center mt-2">
                   <div className="text-lg font-bold">{product.price}</div>
-                  <button className="btn btn-primary flex items-center p-2 rounded-md hover:bg-[#029FAE]">
+                  <button className="btn btn-primary flex items-center p-2 rounded-md bg-gray-500 hover:bg-teal-700">
                     <ShoppingCart className="mr-2" />
                   </button>
-                </div>
+                </div> </div>
               </div>
             </CardFooter>
           </Card>
