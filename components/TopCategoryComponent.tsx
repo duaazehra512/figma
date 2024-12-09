@@ -5,18 +5,18 @@ import Image from "next/image";
 const TopCategories = () => {
   const categories = [
     {
-      name: "Wisp Chair",
-      products: "1,156 Products",
+      name: "Wing Chair",
+      products: "3,584 Products",
       image: "/sec.png.png",
     },
     {
       name: "Wooden Chair",
-      products: "582 Products",
+      products: "157 Products",
       image: "/sec1.png.png",
     },
     {
       name: "Desk Chair",
-      products: "164 Products",
+      products: "154 Products",
       image: "/sec2.png.png",
     },
   ];

@@ -97,7 +97,7 @@ export default function Cart() {
                 <p>$198.00</p>
               </div>
             </div>
-            <button className="w-full mt-4 bg-teal-500 text-white py-3 rounded-lg font-semibold hover:bg-teal-600 transition">
+            <button className="w-full mt-4 bg-teal-500 text-white py-3 rounded-full font-semibold hover:bg-teal-600 transition">
               Member Checkout
             </button>
           </div>
